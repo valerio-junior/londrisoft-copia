@@ -30,6 +30,7 @@ import {
 import InputDadosEmpresa from "../../../Components/InputDados/index";
 import LabelDadosEmpresa from "../../../Components/LabelDados/index";
 import TituloDivisaoSessao from "../../../Components/DivisaoSessoes/index"
+import { Sugestao } from '../../../Components/LinkSugestao/style'
 
 import logo from "../../assets/img/logo.png";
 import imageG from "../../assets/img/image-g.png";
@@ -39,6 +40,9 @@ import { Children } from 'react';
 function Info() {
   return (
     <Container>
+      <Sugestao>
+              <a href="https://feedback.userreport.com/7275e80b-0459-4d2a-94d1-05c79f73478a/#ideas/popular" target='blank'>Deixe sua sugestão</a>
+            </Sugestao>
       <Nav>
         <div>
           <img src={logo} alt="logo londrisoft" />

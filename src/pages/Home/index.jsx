@@ -1,4 +1,6 @@
-import { Container, Sugestao, ContainerEsquerda, ContainerDireita, ContainerInput, Input, Button,Form } from "./style"
+import { Container, ContainerEsquerda, ContainerDireita, ContainerInput, Input, Button,Form } from "./style"
+
+import { Sugestao } from '../../../Components/LinkSugestao/style';
 
 import imageComp from "../../assets/img/image-comp.png"
 import logo from "../../assets/img/logo.png"
