@@ -1,7 +1,6 @@
 import {
   Nav,
   Container,
-  Input,
   DivImagemFoguete,
   ContainerInfoBasica,
   AreaInformacao,
@@ -31,6 +30,8 @@ import InputDadosEmpresa from "../../../Components/InputDados/index";
 import LabelDadosEmpresa from "../../../Components/LabelDados/index";
 import TituloDivisaoSessao from "../../../Components/DivisaoSessoes/index"
 import { Sugestao } from '../../../Components/LinkSugestao/style'
+import { InputPesquisar } from "../../../Components/PesquisaInput/style"
+import { ButtonPesquisar } from "../../../Components/BotaoPesquisar/style"
 
 import logo from "../../assets/img/logo.png";
 import imageG from "../../assets/img/image-g.png";
@@ -48,8 +49,8 @@ function Info() {
           <img src={logo} alt="logo londrisoft" />
         </div>
         <div>
-          <Input placeholder="CPF / CNPJ, Nome / Razão Social / E-mail / Id Empresa"></Input>
-          <button>Pesquisar</button>
+          <InputPesquisar placeholder="CPF / CNPJ, Nome / Razão Social / E-mail / Id Empresa"></InputPesquisar>
+          <ButtonPesquisar>Pesquisar</ButtonPesquisar>
         </div>
         <div style={{ cursor: "pointer" }}>
           <img src={imageG} alt="imagem g" />

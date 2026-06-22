@@ -17,23 +17,6 @@ export const Nav = styled.div `
         align-items: center;
     }
 
-    button {
-        width: 100px;
-        padding: 8px;
-        font-size: 14px;
-        font-weight: 400;
-        border: none;
-        border-radius: 0px 4px 4px 0px;
-        background-color: #166dd7;
-        color: #FFFF;
-        cursor: not-allowed;
-        opacity: 0.5;
-
-        &:hover {
-            opacity: 0.4;
-        }
-    }
-
     p {
         margin: 0 30px 0 5px;
         font-size: 14px;
@@ -45,20 +28,6 @@ export const Nav = styled.div `
         margin-left: 4px;
     }
 `
-
-export const Input = styled.input `
-    width: 495px;
-    padding: 5px;
-    outline: none;
-    border-radius: 2px;
-    border: 1px solid #d8d8d8;
-    background-color: transparent;
-
-    &::placeholder {
-        font-size: 13px;
-    }
-`
-
 export const DivImagemFoguete = styled.div `
 width: 100%;
 margin-top: 20px;
