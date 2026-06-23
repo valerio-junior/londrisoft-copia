@@ -26,6 +26,8 @@ import {
   Detalhes
 } from "./style";
 
+import { BotaoLimpar, InputWrapper } from "../Pesquisa/style"
+import { useState } from "react";
 import InputDadosEmpresa from "../../../Components/InputDados/index";
 import LabelDadosEmpresa from "../../../Components/LabelDados/index";
 import TituloDivisaoSessao from "../../../Components/DivisaoSessoes/index"
@@ -39,18 +41,36 @@ import imageFoguete from "../../assets/img/image-aviao.png";
 import { Children } from 'react';
 
 function Info() {
+  const [termoPesquisa, setTermoPesquisa] = useState("");
+  
+    const limparInput = () => {
+        setTermoPesquisa("");
+    };
+
+    const botaoDesativado = termoPesquisa.trim() === "";
+    
   return (
     <Container>
       <Sugestao>
-              <a href="https://feedback.userreport.com/7275e80b-0459-4d2a-94d1-05c79f73478a/#ideas/popular" target='blank'>Deixe sua sugestão</a>
-            </Sugestao>
+        <a href="https://feedback.userreport.com/7275e80b-0459-4d2a-94d1-05c79f73478a/#ideas/popular" target='blank'>Deixe sua sugestão</a>
+      </Sugestao>
       <Nav>
         <div>
           <img src={logo} alt="logo londrisoft" />
         </div>
         <div>
-          <InputPesquisar placeholder="CPF / CNPJ, Nome / Razão Social / E-mail / Id Empresa"></InputPesquisar>
-          <ButtonPesquisar>Pesquisar</ButtonPesquisar>
+          {/* Elemento posicional para alinhar o X */}
+          <InputWrapper>
+            <InputPesquisar placeholder="CPF / CNPJ, Nome / Razão Social / E-mail / Id Empresa"
+            value={termoPesquisa}
+            onChange={(e) => setTermoPesquisa(e.target.value)}></InputPesquisar>
+
+            {!botaoDesativado && (
+              <BotaoLimpar onClick={limparInput}>✕</BotaoLimpar>
+            )}
+          </InputWrapper>
+
+          <ButtonPesquisar disabled={botaoDesativado}>Pesquisar</ButtonPesquisar>
         </div>
         <div style={{ cursor: "pointer" }}>
           <img src={imageG} alt="imagem g" />

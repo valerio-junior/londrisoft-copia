@@ -1,8 +1,8 @@
-
-function BotaoSugestao() {
+import { Sugestao } from "./style"
+function BotaoSugestao({children}) {
     return(
         <Sugestao>
-            <a>children</a>
+            <a>{children}</a>
         </Sugestao>
     )
 }

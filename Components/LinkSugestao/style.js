@@ -14,7 +14,7 @@ export const Sugestao = styled.div `
 
     a {
         text-decoration: none;
-        padding: 15px 12px;
+        padding: 5px 12px;
         width: 100%;
         font-size: 14px;
         color: inherit;

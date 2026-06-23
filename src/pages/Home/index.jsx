@@ -1,6 +1,6 @@
 import { Container, ContainerEsquerda, ContainerDireita, ContainerInput, Input, Button,Form } from "./style"
 
-import { Sugestao } from '../../../Components/LinkSugestao/style';
+import  BotaoSugestao from '../../../Components/LinkSugestao';
 
 import imageComp from "../../assets/img/image-comp.png"
 import logo from "../../assets/img/logo.png"
@@ -78,7 +78,7 @@ function Home() {
 
     if (formularioValido) {
       console.log('Campos validados com sucesso! Entrando...');
-      navigate('/details'); 
+      navigate('/geral'); 
     }
   };
 
@@ -86,9 +86,9 @@ function Home() {
   return (
     <Container>
       
-      <Sugestao>
+      <BotaoSugestao>
         <a href="https://feedback.userreport.com/7275e80b-0459-4d2a-94d1-05c79f73478a/#ideas/popular" target='blank'>Deixe sua sugestão</a>
-      </Sugestao>
+      </BotaoSugestao>
       <ContainerEsquerda>
         <img src={imageComp} alt="logo do londrisoft" />
       </ContainerEsquerda>

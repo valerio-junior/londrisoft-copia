@@ -10,10 +10,26 @@ export const ButtonPesquisar = styled.button `
     border-radius: 0px 4px 4px 0px;
     background-color: #166dd7;
     color: #FFFF;
-    cursor: not-allowed;
-    opacity: 0.5;
+    /* cursor: not-allowed; */
+    /* opacity: 0.5; */
 
-    &:hover {
-        opacity: 0.4;
+
+   &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    /* Estado Ativo (quando tem texto no input) */
+    &:not(:disabled) {
+        cursor: pointer;
+        opacity: 1;
+
+        &:hover {
+            opacity: 0.8; /* Efeito de hover comum */
+        }
     }
 `
