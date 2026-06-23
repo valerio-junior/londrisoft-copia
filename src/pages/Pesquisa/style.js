@@ -94,12 +94,15 @@ export const BotaoLimpar = styled.button`
     transform: translateY(-50%);
     background: none;
     border: 2px solid #949494;
-    border-radius: 60px;
-    font-size: 14px;
-    font-weight: bolder;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
     cursor: pointer;
-    color: #949494;
-    padding: 0px;
+    color: #808080;
+    height: 20px;
+    width: 20px;
+    padding-bottom: 18px;
+    
 
     &:hover {
         color: #4a5568;
