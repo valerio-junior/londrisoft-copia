@@ -13,7 +13,7 @@ export const Container = styled.div `
 `
 
 export const ContainerEsquerda = styled.div `
-
+    
     img{
         height: 100vh;
 
@@ -35,6 +35,14 @@ export const ContainerDireita = styled.div `
 
     img {
         margin: 0 0 8px 8px;
+    }
+
+    span {
+        color: #ff3333;
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 5px;
+            
     }
 `
 export const Form = styled.form `
@@ -62,7 +70,7 @@ export const Input = styled.input `
     outline: transparent solid 2px;
     padding: 10px 13px;
     border-radius: 4px;
-    border: 1px solid #F0F0F0;
+    border: 2px solid ${(props) => props.hasError ? '#ff3333' : '#ccc'};
     width: 350px;
     background-color: #F5F5F5;
     font-size: 0.8rem;
